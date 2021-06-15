@@ -1,0 +1,223 @@
+@font-face {
+  font-family: "Norm Sans";
+  src: url("assets/fonts/norm-sans/Norm-Bold.ttf");
+}
+@font-face {
+  font-family: "Helvetica";
+  src: url("assets/fonts/FreeSansBold.ttf");
+}
+* {
+  font-family: "Helvetica";
+}
+body {
+  margin: 0%;
+
+  .block {
+    margin: 0%;
+    width: 100%;
+    min-height: 30rem;
+    color: #001030;
+    background-color: #00dfc6;
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+    header {
+      display: flex;
+      flex-direction: row;
+
+      padding: 3rem;
+      .logo {
+        img {
+          width: 3rem;
+          height: 3rem;
+          border: none;
+          border-radius: 0.75rem;
+        }
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Norm Sans";
+        font-weight: 900;
+        font-size: 3rem;
+        gap: 1rem;
+      }
+      .nav {
+        flex: 1;
+        ul {
+          list-style: none;
+          display: flex;
+          justify-content: center;
+          gap: 4rem;
+          font-weight: 700;
+        }
+      }
+      button {
+        padding: 1rem;
+        border-radius: 0.5rem;
+        color: #001030;
+        font-family: "Norm Sans";
+        font-weight: bold;
+        background-color: white;
+        border: none;
+      }
+    }
+    main {
+      .wrapper {
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+        h1 {
+          margin: 5rem 8rem;
+          font-size: 54px;
+          font-weight: bold;
+          font-family: "Norm Sans";
+        }
+        img {
+          margin-left: -12rem;
+          margin-top: 5rem;
+          width: 3rem;
+          height: 3rem;
+          z-index: 1;
+        }
+        .chat1 {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          margin-left: 30rem;
+          margin-top: -20rem;
+          img {
+            border-radius: 50rem;
+            border-color: white;
+            border-style: solid;
+            z-index: 1;
+          }
+          .card {
+            margin-top: 12rem;
+            margin-left: -1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 2rem;
+            width: 18rem;
+            height: 8rem;
+            background-image: linear-gradient(to bottom right, #0066ff, #00c3ff);
+            border-radius: 1rem;
+            p {
+              font-family: "Norm Sans";
+              font-weight: bold;
+              margin-left: 0.5rem;
+              color: white;
+            }
+          }
+        }
+      }
+      .wrapper2 {
+        display: flex;
+        flex-direction: row;
+        margin-top: -15rem;
+        margin-left: 8rem;
+        z-index: -1;
+        .section {
+          width: 20rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          font-family: "Helvetica";
+          font-size: 1rem;
+          font-weight: bold;
+          hr {
+            width: 30%;
+            margin-left: 0rem;
+            margin-top: 1rem;
+            height: 3px;
+            background-color: #0066ff;
+            border: none;
+          }
+        }
+        .image {
+          img {
+            width: 38rem;
+            flex: 1;
+          }
+        }
+        .chat2 {
+          .card {
+            margin-top: 5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(0, 212, 255, 1);
+            background: linear-gradient(120deg, rgb(0, 162, 255) 0%, rgba(2, 0, 36, 1) 100%);
+            width: 20rem;
+            height: 6rem;
+            border-radius: 1rem;
+            p {
+              font-family: "Helvetica";
+              color: white;
+              font-size: 1rem;
+              font-weight: lighter;
+              .seagreen {
+                color: #00dfc6;
+                font-weight: bold;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .info-cards {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    gap: 1rem;
+    .infocard {
+      display: flex;
+      flex-direction: column;
+      img {
+        position: relative;
+        width: 10rem;
+      }
+
+      p {
+        margin-left: 1rem;
+        width: 8rem;
+        color: white;
+        font-size: 0.5rem;
+        font-family: "Helvetica";
+        position: absolute;
+        margin-top: 1rem;
+        b {
+          font-family: "Norm Sans";
+          font-size: 1rem;
+          
+        }
+      }
+    }
+    .infocard2 {
+      display: flex;
+      flex-direction: column;
+      img {
+        position: relative;
+        width: 15rem;
+      }
+
+      p {
+        margin-left: 1rem;
+        width: 14rem;
+        font-size: 1rem;
+        color: white;
+        font-family: "Helvetica";
+        position: absolute;
+        margin-top: 1rem;
+        b {
+          font-family: "Norm Sans";
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
